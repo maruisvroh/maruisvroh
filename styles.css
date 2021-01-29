@@ -1,0 +1,271 @@
+body;html*{
+    margin:0;
+    padding:0;
+    font-family:'verdana';'sans-serif';'lucida sans unicode';
+    box-sizing: border-box;
+}
+#slide{
+    background-color: #ccc;
+    width: 100%;
+    height: 550PX;
+    position: relative;
+    
+}
+#img{
+    width: 100%;
+    height: 550px;
+    position: absolute
+}
+#bouton_gauche{
+    height: 100px;
+    width: 100px;
+    left: 0px;
+    top: 80px;
+    position:absolute;
+}
+#bouton_droit{
+    height: 100px;
+    width: 100px;
+    right: 0px;
+    top: 80px;
+    position:absolute;
+}
+.gauche{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width: 60px;
+    height: 70%;
+    opacity: 0.4;
+    
+}.gauche:hover{
+    opacity: 1;
+    
+}
+
+.droit{
+    position: absolute;
+    top: 60%;
+    right: :10%;
+    width: 60px;
+    height: 70%;
+    opacity: 0.4;
+    
+}.droit:hover{
+    opacity:1;
+    
+}
+/*................................*/
+.entete_titre{
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    padding: 4%;
+    position: absolute;
+    top:69.6%;
+    line-height:normal;
+    
+    
+    
+}
+.entete_titre h1{
+    font-size: 20px;
+    line-height: normal;
+}
+#rs{
+    position:absolute;
+    text-align:center;
+    
+   
+
+}
+.sociaux{
+    margin: 2%;
+     width: 10%;
+    height: 20%;
+    
+    }
+    
+    /*-------------style de mon menu-------*/
+    #menu{
+        background-color:'Black';
+        position: sticky;
+        top: 0; overflow: hidden;
+        
+        
+    
+    }
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: black;
+        
+    }
+    li{
+        float:left;
+        
+    }
+    li a {
+        color: white;text-align: center;padding: 14px 16px; text-decoration: none;
+        display: block;
+        
+    }
+    li a:hover:not(.active){
+       background: green;
+       
+    }
+    .active{
+        background: green;
+        
+    }
+    
+    /*--------- Style du contenu-------*/
+    
+    #contenu{
+        width: 100%;
+        margin-left: auto; margin-right: auto;
+        border-bottom-width: 0px; padding-left: 0px; padding-top: 20px;padding-right:0px;
+        padding-bottom: 0px;
+        text-align: center;
+            }
+            
+    .titre_section{
+        font-size: 26px;
+        width: 90%;
+        margin-top:20px;
+        color: grey;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 30px;
+        text-align: center;
+        
+    }
+  
+    h2{
+        text-align: center;
+        line-height: 40px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color: black;
+        
+    }
+    .colonne{
+        position:relative;
+        float: left;
+        width: 320px;
+        min-height: 100px;
+        text-align: center;
+        margin: 30px;
+        padding: 15px;
+        
+    }
+    
+    .image{
+        opacity: 1;
+        display:block;
+        width: 100%;
+        transition: 0.5s ease;
+        backface-visibility:hidden;
+          
+    }
+    
+    .middle {
+        transition: 0.5s ease;
+        opacity:0;
+        position:absolute;
+        top: 50px;
+        left: 50px;
+        transform:translate (-50 ;-50);
+    }
+    .texte {
+        position: relative;
+        background: red;
+        color: white;
+        font-size: 16px;
+        padding:16px 32px;
+        cursor: pointer;
+        
+        
+    }
+    .colonne:hover .image{
+        opacity: 0.3;
+        
+    }
+    .colonne:hover .middle{
+        opacity: 1;
+        
+    }
+    
+    
+ /*---------style newsletter---------*/
+    
+.inscription_boite{
+    font-family: 'verdana';'sans-serif';'lucida sans unicode';
+    padding: 6% 0;
+    text-align: center;
+    clear: left;
+    
+}
+
+.inscription_boite h2{
+    margin: 0 0 1% 0;
+    font-weight: 100;
+    font-size: 30px;
+
+}
+   .inscription_boite .inscription{
+    width: 100%; max-width: 600px; margin: auto;
+ } 
+  .inscription_boite .inscription input{
+    width: 100%; background-color: transparent; border: 0;
+    border-bottom: 1px solid green;
+    padding: 0 1 0 1;
+    font-size: 18px;
+    font-family: inherit;
+    font-weight: 300;
+    line-height: 1.5;
+    color: black;
+    outline: none;
+    text-align: center;
+    
+    }  
+    
+    .inscription_boite .inscription button {
+        margin-top: 3%;
+        background: green;
+        border: 2px solid aliceblue;
+        border-radius: 50px;
+        padding: 16px 32px;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 700;
+        position: relative;
+        transition: 0.5s;
+        
+    }
+    
+    .inscription_boite .inscription button:hover{
+       color: white;
+       padding: 10px 40px;
+       transition: 0.5s;
+        
+    }
+    
+   .footer{
+    clear: left;
+    padding: 40px ;
+    bottom: 0;
+    text-align: center
+    margin-top: auto; background-color: transparent;
+    
+    
+   }
+    .footer h2{
+        color: green;
+        text-align: center;
+    }
+    
+   
+   
